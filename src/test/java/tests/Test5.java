@@ -18,7 +18,7 @@ public class Test5 extends base{
 	@Test	
 	public void test5() {
 		home.navigateToSignInScreen();
-		Assert.assertFalse(driver.getCurrentUrl().contains("signin"), "Sign in page doesnt exist");
+		Assert.assertTrue(driver.getCurrentUrl().contains("signin"), "Sign in page doesnt exist");
 		
 	}
 }
